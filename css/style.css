@@ -1,0 +1,266 @@
+.container{
+    box-sizing: border-box;
+    margin: 0;
+}
+.header{
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffff;
+    padding: 45px 0 45px 0;
+}
+.header-logo{
+    cursor: pointer;
+}
+.header__logo-text{
+   color:#1C2A39;
+   font-size: 24px;
+   font-weight: bold;
+}
+.header-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__links-list{
+    display: flex;
+}
+.header_links__list-item:last-child{
+    margin-right: 0px;
+}
+.header_links__list-item{
+    margin-right: 40px;
+}
+.header_link__txt-style{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    color:#1C2A39;
+    transition: ease .1;
+}
+.header_link__txt-style:hover{
+    color: #000000;
+    font-weight: 900;
+}
+.header__btns-list{
+    display: flex;
+    align-items: center;
+}
+.header_btns__list-items:last-child{
+    margin-right: 0px;
+}
+.header_btns__list-items{
+    margin-right: 40px;
+}
+.cartIcon {
+    position: relative;
+}
+.cartCounter {
+    position: absolute;
+    top: 10px;
+    right: -3px;
+    background-color: #FF353A;
+    color: white;
+    border-radius: 50%;
+    padding: 1px;
+    font-size: 10px;
+}
+.slider{
+    position: relative;
+    display: flex;
+    box-shadow: none;
+    height: 73vh;
+    width: 100%;
+    background: url(../assets/bg/banner.png) no-repeat center;
+    object-fit: cover;
+    z-index: 0;
+}
+.fake-slider{
+    display: flex;
+    justify-content:center;
+}
+.slider__btn-dot{
+    outline:none;
+    border:none;
+    background:none;
+}
+.dot-one,.dot-two,.dot-three {
+    cursor: pointer;
+    height: 11px;
+    width: 11px;
+    margin: 0 2px;
+    background-color: #9E98DC;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot-one,.dot-two{
+    margin-right: 10px;
+}
+.active,.dot-one:hover,.dot-two:hover,.dot-three:hover {
+    background-color: #EFEEF6;
+}
+.exchange-books{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 11%;
+    left: 77%;
+    width: 149px;
+    height:204px;
+    z-index: 500;
+    background-color:#9E98DC;
+    
+}
+.exchange_books__txt-style{
+    width: 110px;
+    font-size: 18px;
+    color: #1C2A39;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    line-height: 21.94px;
+    cursor:pointer;
+}
+.top-books{
+    display: flex;
+    align-items:flex-end;
+    top: 50%;
+    right: 11%;
+    position: absolute;
+    z-index: 500px;
+    width: 137px;
+    height: 273px;
+    background-color: #FF8FE6;
+}
+.top_books__txt-style{
+    width: 50px;
+    font-size: 18px;
+    color: #1C2A39;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    line-height: 21.94px;
+    cursor:pointer;
+}
+.section-books{
+    margin-top: 105px;
+}
+.books-categories{
+    text-align: left;
+    padding: 0;
+    width: 416px;
+}
+.books_categories-list{
+    display: flex;
+    flex-direction: column;
+    background: #EFEEF6;
+}
+.books_categories__list-items{
+    cursor: pointer;
+    margin-bottom: 23px;
+    font-size: 14px;
+    margin-left: 136px;
+    text-align: center;
+}
+.books_categories-list:last-child{
+    margin-bottom: 0px;
+}
+.item{
+    margin-top: 23px;
+}
+.active {
+    font-weight: bold; /* Жирный шрифт для активной категории */
+    font-size: 16px; /* Увеличенный размер шрифта для активной категории */
+    position: relative; /* Устанавливаем позицию для точки */
+}
+.book-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    margin-top: -570px;
+    max-width: 1600px;
+    left: 15%;
+    z-index: 500;
+    /*display: grid;
+  grid-template-columns: repeat(3, 1fr); Распределение по 3 колонкам 
+  gap: 10px;  Расстояние между карточками 
+  */
+}
+.book-card{
+    display: flex;
+    flex-direction: row;
+    top: 46px;
+    left:0;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    width: 424px;
+}
+.book_card-style{
+    display:flex;
+}
+.book-title,.book-price{
+    font-weight: bold;
+    color: #1C2A39;
+    font-size: 16px;
+    line-height: 19.5px;
+}
+.book-price{
+    margin-bottom: 0px;
+}
+.book-authors,.book-description{
+    font-family: 'Open Sans', sans-serif;
+    line-height:13.62px;
+    font-size: 10px;
+    color: #5C6A79;
+    margin-bottom: 4px;
+}
+.book_card-components{
+    width:200px;
+    margin-left: 36px;
+    margin-top: 49px;
+}
+.books_list__txt-style{
+    display: flex;
+    align-items:baseline;
+    font-size: 12px;
+    line-height: 14.6px;
+}
+.loadMore{
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    margin-top: 20px;
+}
+.loadMore-btn{
+    border: 1px solid #4C3DB2;
+    padding: 18px 62px 17px 61px;
+}
+.book-buynow{
+    border: 1px solid #4C3DB2;
+    padding: 18px 62px 17px 61px;
+}
+.loadMore-btn,.book-buynow{
+    font-size:8px;
+    text-transform: uppercase;
+    color: #4C3DB2;
+    font-weight: bold;
+}
+.book-description,.book-price,.book-buynow{
+    margin-top: 16px;
+}
+.book-rating{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    line-height: 13.62px;
+    color: #5C6A79;
+}
+.ff{
+    width:212px;
+    height: 300px;
+}

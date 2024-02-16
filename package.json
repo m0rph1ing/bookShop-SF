@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "style-loader": "^3.3.4",
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "start": "webpack server",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}
